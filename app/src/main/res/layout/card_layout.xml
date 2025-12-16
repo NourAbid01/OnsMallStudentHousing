@@ -1,0 +1,81 @@
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- CardView contenant le contenu principal -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardapp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardElevation="6dp"
+        app:cardCornerRadius="12dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- Image de la carte -->
+            <ImageView
+                android:id="@+id/imageAppU"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3.5"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:src="@drawable/appartementu" />
+
+            <!-- Section de description -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:orientation="vertical"
+                android:background="@drawable/card_border"
+                android:padding="10dp">
+
+                <!-- Ligne contenant les deux TextView -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="start|end">
+
+                    <TextView
+                        android:id="@+id/desAppU"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Maison"
+                        android:textSize="18sp"
+                        android:textColor="@color/purple" />
+
+                    <TextView
+                        android:id="@+id/descrpAppU"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="s+3"
+                        android:textSize="16sp"
+                        android:textColor="@color/purple"
+                        android:layout_marginStart="10dp" /> <!-- Espacement entre les TextViews -->
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Icône de recherche placée à droite -->
+    <ImageView
+        android:id="@+id/search_icon_2"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_baseline_search_24"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Rechercher" />
+</RelativeLayout>

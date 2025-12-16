@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+         <style name="Base.Theme.OnsMallStudentHousing" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <!-- Primary Based color-->
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimaryVariant">@color/purple</item>
+        <item name="colorPrimary">@color/purple</item>
+         </style>
+
+    <style name="Theme.OnsMallStudentHousing" parent="Base.Theme.OnsMallStudentHousing" />
+</resources>
